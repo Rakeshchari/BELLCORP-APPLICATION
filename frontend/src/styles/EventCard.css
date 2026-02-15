@@ -1,0 +1,114 @@
+.event-card {
+  background-color: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px var(--shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.event-card:hover {
+  box-shadow: 0 8px 24px var(--shadow-lg);
+  transform: translateY(-6px);
+}
+
+.event-card-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  padding: 24px;
+  color: white;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card-category {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+}
+
+.event-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 12px 0 0 0;
+  color: white;
+  line-height: 1.3;
+}
+
+.event-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.event-card-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.event-card-info-icon {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+.event-card-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.event-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.event-card-seats {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.event-card-seats-count {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.event-card-seats.low {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+.event-card-btn {
+  padding: 8px 20px;
+  font-size: 0.875rem;
+}
