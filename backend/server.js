@@ -16,6 +16,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.get("/", (req, res) => {
+  res.send("Bellcorp Event API is running 🚀");
+});
 app.use('/api/auth', authRoutes);
 app.use('/api/events', eventRoutes);
 
